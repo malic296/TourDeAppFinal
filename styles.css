@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: "Roboto";
+}
+
+body{
+    margin: 0px;
+    width: 1080px;
+    height: 1920px;
+}
+
+header{
+    height: 200px;
+    background-color: #1FC7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0px;
+    font-size: 100px;
+}
+
+.menu{
+    width: 1080px;
+    height: 200px;
+    display: flex;
+}
+
+.menu1{
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu2{
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.redir-btn{
+    height: 160px;
+    width: 500px;
+    font-size: 90px;
+    background-color: #003459;
+    color: white;
+
+    
+}
+
+.add-btn{
+    height: 160px;
+    width: 500px;
+    font-size: 100px;
+    background-color: #003459;
+    color: white;
+}
+
+.notes{
+    width: 1080px;
+    height: 1580px;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.note-radek{
+    width: 1000px;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.note{
+    width: 300px;
+    height: fit-content;
+    word-break: break-all;
+}
+
+.note-nadpis{
+    font-size: 40px;
+    padding: 15px;
+    word-break: break-word;
+    background-color: #E6CC00;
+}
+.note-text{
+    font-size: 30px;
+    padding: 15px;
+    background-color: #ECE75F;
+}
+
+.note-podpis{
+    font-size: 40px;
+    text-align: right;
+    padding: 15px;
+    background-color: #ECE75F;
+}
+
+.date{
+    font-size: 30px;
+}
