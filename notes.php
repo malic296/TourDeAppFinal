@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "styles.css">
     <title>Notes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).on("click", ".delete-note-btn", function() {
+        var noteId = $(this).data("note-id");
+        $.ajax({
+            url: "delete_note.php",
+            type: "POST",
+            data: {id: noteId},
+            success: function() {
+                $("#note-" + noteId).remove();
+            }
+        });
+    });
+    </script>
+
 </head>
 <body>
     <header>
@@ -14,7 +29,9 @@
 
     <div class="menu">
         <div class="menu1">
-            <input type="button" class = "add-btn" value = "+">
+            <form action = "insert.php" method = "post">
+                <input type="submit" class = "add-btn" value = "+" name="insert">
+            </form>
         </div>
 
         <div class="menu2">
@@ -54,11 +71,15 @@
                 $text = $row['text_note'];
                 $autor = $row['autor_nazev'];
                 $deadline = $row['date_finnish'];
+                $id = $row["ID"];
+
+
+
                 echo "
                 <div class='note'>
                     <div class='note-nadpis'>$nazev<br><span class = 'date'>Deadline: $deadline</span></div>
                     <div class='note-text'>$text</div>
-                    <div class = 'note-podpis'>$autor</div>
+                    <div class = 'note-podpis'>$autor<button class='delete-note-btn' data-note-id='$id'>DELETE</button></div>
                 </div>
                 ";
                 $cislo ++;
@@ -72,10 +93,11 @@
             
         }
      
-        ?>
-        
+        ?>        
 
     </div>
+
+    
 
 
 
