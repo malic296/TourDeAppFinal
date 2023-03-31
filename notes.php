@@ -40,8 +40,10 @@
             }
         }
 
+
         $cislo = 1;
         $pomocne_cislo = 1;
+
         $result = $connection->query($sql);
         if($result->num_rows > 0){     
             while($row = $result->fetch_assoc()){
@@ -59,33 +61,18 @@
                     <div class = 'note-podpis'>$autor</div>
                 </div>
                 ";
-                if($pomocne_cislo == $cislo){
+                $cislo ++;
+                if($pomocne_cislo + 3 == $cislo){
+                    $pomocne_cislo = $cislo;
                     echo "</div>";
-                    
                 }
-
-                if($pomocne_cislo == $cislo){
-                    $pomocne_cislo = $pomocne_cislo + 3;
-                }
-
-                $cislo++;
-                
+                        
                 
             }
-        }
-
-
-
-        
-        ?>
-
-        <div class='note-radek'>
-            <div class='note'>
-                <div class='note-nadpis'>Úprava webu<br><span class = 'date'>Deadline: 21.7.2023</span></div>
-                <div class='note-text'></div>
-            </div>
             
-        </div>
+        }
+     
+        ?>
         
 
     </div>
