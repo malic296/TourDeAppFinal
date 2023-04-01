@@ -122,3 +122,11 @@ h1{
 .date{
     font-size: 30px;
 }
+.latestCommit{
+    width: 700px;
+    height: fit-content;
+    word-break: break-all;
+}
+.content{
+    padding: 20px;
+}
