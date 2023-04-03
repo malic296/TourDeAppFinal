@@ -9,21 +9,14 @@ body{
     height: 1920px;
 }
 
-.input-insert{
-    width: 150px;
-    height: 80px;
-}
-
 .all{
     margin: 0px;
     width: 1080px;
-    height: 1920px;
+    height: 100%;
     display: flex;
-    justify-content: flex-start;
-    margin-top: 50px;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-size: 80px;
+    
 }
 
 header{
@@ -104,29 +97,202 @@ h1{
     font-size: 40px;
     padding: 15px;
     word-break: break-word;
+
+}
+
+.yellow-nadpis{
     background-color: #E6CC00;
 }
+.yellow-body{
+    background-color: #ECE75F;
+}
+
+.orange-nadpis{
+    background-color: #FF7400;
+}
+.orange-body{
+    background-color: #FF9A00;
+}
+
+.red-nadpis{
+    background-color: #FF2424;
+}
+
+.red-body{
+    background-color: #FF4747;
+}
+
 .note-text{
     font-size: 30px;
     padding: 15px;
-    background-color: #ECE75F;
+
 }
 
 .note-podpis{
     font-size: 40px;
     text-align: right;
     padding: 15px;
-    background-color: #ECE75F;
+
 }
 
 .date{
     font-size: 30px;
 }
 .latestCommit{
-    width: 700px;
+    width: 1040px;
     height: fit-content;
     word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.dashboard-nadpis{
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+}
+
+.dashboard-text{
+    width: 100%;
+    font-size: 40px;
+    
+}
+.dashboard-radek{
+    width: 1000px;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
 .content{
     padding: 20px;
 }
+
+.note-insert-btn{
+    width: 1080px;
+    height: 100%;
+    color: white;
+    background-color: #003459;
+    font-size: 90px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-insert{
+    width: 1080px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.insert-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+.input-text-insert{
+    border: none;
+    height: auto;
+    font-size: 50px;
+    border-bottom: 2px solid red;
+    margin-bottom: 200px;
+
+}
+
+.input-text-insert:active{
+    border-bottom: 2px solid lightgreen;
+}
+
+.input-text-insert:valid{
+    border-bottom: 2px solid lightgreen;
+}
+
+.input-text-insert:focus{
+    outline: none;
+    border-bottom: 2px solid lightgreen;
+}
+
+label{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+
+.text-popup-insert{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Roboto";
+}
+
+
+.btn-popup-insert{
+    margin-top: 20%;
+    width: 80%;
+    height: 40%;
+    font-size: 60px;
+    background-color: #003459;
+    color: white;
+
+}
+
+.box-popup-insert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.priority{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.insert-creation-btn{
+    height: 100px;
+    margin-top: 50px;
+    font-size: 70px;
+    background-color: #003459;
+    color: white;
+}
+
+.menu3{
+    width: 1080px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.dashboard-form{
+    width: 1040px;
+    height: auto;
+}
+
+.dashboard-redir-btn{
+    height: 160px;
+    width: 1000px;
+    font-size: 90px;
+    background-color: #003459;
+    color: white;
+}
+
+
+.blanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

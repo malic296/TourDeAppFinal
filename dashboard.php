@@ -185,26 +185,18 @@ $hours = $diff->days * 24 + $diff->h;
 </head>
 <body>
     <header>
-        <h1>Notes</h1>
+        <h1>Dashboard</h1>
     </header>
 
-        <div class="menu2">
-             <form action = "notes.php" method = "post">
-                <input type="submit" name = "notes" value="Notes" class="redir-btn">
-             </form>
-        </div>
-    </div>
+        
+    
 
     <div class="content">
-        <?php
-        
-        
-        
-        ?>
-        <div class='note-radek'>
+
+        <div class='dashboard-radek'>
             <div class="latestCommit">
-                <div class='note-nadpis'>Server běží<br></div>
-                <div class='note-text'>
+                <div class='dashboard-nadpis yellow-nadpis'>Server běží<br></div>
+                <div class='dashboard-text yellow-body'>
                 <?php 
                 echo "$hours hodin<br>"
                 ?>
@@ -213,10 +205,10 @@ $hours = $diff->days * 24 + $diff->h;
         </div>
 
 
-        <div class='note-radek'>
+        <div class='dashboard-radek'>
             <div class="latestCommit">
-                <div class='note-nadpis'>Nejnovější commit<br><span class = 'date'>Commitnuto <?php echo "$laFixDate[0] v $laFixDate[1]" ?></span></div>
-                <div class='note-text'>
+                <div class='dashboard-nadpis yellow-nadpis'>Nejnovější commit<br><span class = 'date'>Commitnuto <?php echo "$laFixDate[0] v $laFixDate[1]" ?></span></div>
+                <div class='dashboard-text yellow-body'>
                 <?php 
                 echo "Autor: $laUserName \"$laUserNick\" $laUserSurname<br>
                 Popis: $laUserDesc<br>
@@ -227,10 +219,10 @@ $hours = $diff->days * 24 + $diff->h;
             </div>
         </div>
 
-        <div class='note-radek'>
+        <div class='dashboard-radek'>
             <div class="latestCommit">
-                <div class='note-nadpis'>Programátor s nejvíce commity<br></div>
-                <div class='note-text'>
+                <div class='dashboard-nadpis yellow-nadpis'>Programátor s nejvíce commity<br></div>
+                <div class='dashboard-text yellow-body'>
                 <?php 
                 echo "$mostName \"$mostNick\" $mostSurname<br>
                 Počet commitů: $mostPocet"
@@ -239,10 +231,10 @@ $hours = $diff->days * 24 + $diff->h;
             </div>
         </div>
 
-        <div class='note-radek'>
+        <div class='dashboard-radek'>
             <div class="latestCommit">
-                <div class='note-nadpis'>Celkový počet commitů<br></div>
-                <div class='note-text'>
+                <div class='dashboard-nadpis yellow-nadpis'>Celkový počet commitů<br></div>
+                <div class='dashboard-text yellow-body'>
                 <?php 
                 echo "$pocetCommit"
                 ?>
@@ -255,6 +247,11 @@ $hours = $diff->days * 24 + $diff->h;
             <canvas id="radarChart"></canvas>
         </div> <!-- radar chart -->
     </div>
+    <div class="menu3">
+             <form action = "notes.php" method = "post" class = "dashboard-form">
+                <input class = "dashboard-redir-btn" type="submit" name = "notes" value="Go Back">
+             </form>
+        </div>
 
     </div>
 
