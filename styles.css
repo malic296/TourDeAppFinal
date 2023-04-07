@@ -90,7 +90,7 @@ h1{
 .note{
     width: 300px;
     height: fit-content;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .note-nadpis{
@@ -125,6 +125,7 @@ h1{
 .note-text{
     font-size: 30px;
     padding: 15px;
+    word-break: break-word;
 
 }
 
@@ -295,4 +296,17 @@ label{
     align-items: center;
 }
 
+.edit-delete{
+    display: flex;
+}
+
+.delete-note-btn{
+    width: 100%;
+    height:70px;
+    font-size: 40px;
+    background-color: #FF4747;
+    border-radius: 0px;
+    border: 0px;
+    border-top: 1px solid black;
+}
 

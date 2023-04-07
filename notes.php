@@ -92,13 +92,14 @@
 
 
                 echo "
-                <div class='note'>
+                <div class='note $body'>
                     <div class='note-nadpis $nadpis'>$nazev<br><span class = 'date'>Deadline: $deadline</span></div>
                     <div class='note-text $body'>$text</div>
                     <div class = 'note-podpis $body'>
-                        <button class='delete-note-btn'>✎</button>
-                        <button class='delete-note-btn' data-note-id='$id'>✘</button>
                         $autor
+                    </div>
+                    <div class='edit-delete'>
+                        <button class='delete-note-btn' data-note-id='$id'>✘</button>
                     </div>
                 </div>
                 ";
